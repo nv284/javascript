@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+
+        <script>
+            function test(a , ...someMore){
+            document.write("First parameter : "+a);
+            document.write("<br/>More parameteres :"+someMore);
+        }
+        test(1,2,4,6,9,11,20,34,56);
+
+        function sortValues(...theArgs){
+            //using array method on rest params 
+            let sortedValue = theArgs.sort();
+            return sortedValue ;
+        }
+        console.log(sortValues(8,7,5,3,1,21,44,10));
+        </script>
+    </body>
+</html>

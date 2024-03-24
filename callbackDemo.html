@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+,<html>
+
+<head></head>
+<body>
+
+    <script>
+        function fun1(){
+            console.log("i am function 1 will execute first ");
+        }
+        function fun2(){
+            console.log("i am function 2 will execute last  after 2 milisecond ");
+        }
+        fun1();
+        fun2();
+        function first(){
+           
+            setTimeout(function(){
+                console.log("Inside function: first");
+            } , 1500);
+        }
+        
+        function second(){
+            console.log("Inside function: Second");
+        }
+
+        first();
+        second();
+    </script>
+</body>
+</html>
